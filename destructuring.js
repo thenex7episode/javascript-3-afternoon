@@ -20,7 +20,7 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
-
+var {color,make,model,year} = carDetails
 //Code Here
 
 
@@ -34,7 +34,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  var {firstName,lastName,title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -54,6 +54,13 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation (obj) {
+ var {utah,california,texas,arizona} =  obj
+}
+ let newObj =  obj.reduce(function (total,element) {
+return total + element
+})
+
 
 
 
@@ -68,7 +75,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 5 //////////
